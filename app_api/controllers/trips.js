@@ -23,7 +23,7 @@ const tripsList = async (req, res) => {
 };
 
 //GET: trips/:tripCode - returns a single trip
-const tripsFindCode = async(req,rest) => {
+const tripsFindCode = async(req,res) => {
     Model 
         .find({ 'code': req.params.tripCode })
         .exec((err, trip) => {

@@ -34,13 +34,13 @@ ngOnInit() {
 onSubmit() {
   this.submitted = true;
   if(this.addForm.valid){
-  this.tripService.addTrip(this.addForm.value)
-  .then( data => {
-  console.log(data);
-  this.router.navigate(['']);
- });
+    this.tripService.addTrip(this.addForm.value)
+    .then( data=> {
+      console.log(data);
+      this.router.navigate(['']);
+    });
+  }
  }
-}
 
 // get the form short name to access the form fields
 get f() { return this.addForm.controls; }

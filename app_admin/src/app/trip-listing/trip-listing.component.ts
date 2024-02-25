@@ -39,5 +39,6 @@ export class TripListingComponent implements OnInit {
 
   ngOnInit(): void {
     this.getTrips()
+    this.addTrip
   }
 }
